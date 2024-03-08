@@ -1,7 +1,17 @@
+"use client";
+
+import { motion } from "framer-motion";
+import SectionTitle from "./SectionTitle";
+
 const About = () => {
   return (
-    <section className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40">
-      <h2 className="text-3xl font-medium mb-8">About Me</h2>
+    <motion.section
+      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40"
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.175 }}
+    >
+      <SectionTitle>About me</SectionTitle>
       <p className="mb-3">
         I obtained a professional title following 6 months of intensive training
         as a Fullstack JavaScript web developer at O&apos;Clock, as part of a
@@ -26,7 +36,7 @@ const About = () => {
         world of web development. So I&apos;m ready to invest time and effort in
         mastering new languages, tools and frameworks.
       </p>
-    </section>
+    </motion.section>
   );
 };
 
