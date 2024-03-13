@@ -1,17 +1,24 @@
 "use client";
 
+import useSectionInView from "@/lib/hooks";
 import portrait from "@/public/astro.png";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+
 import { BsLinkedin } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
 import { HiDownload } from "react-icons/hi";
 import { IoIosArrowForward } from "react-icons/io";
 
 const Intro = () => {
+  const { ref } = useSectionInView("Home");
   return (
-    <section className="mb-28 max-w-[50rem] text- sm:mb-0">
+    <section
+      ref={ref}
+      id="home"
+      className="mb-28 max-w-[50rem] text- sm:mb-0 scroll-mt-[100rem]"
+    >
       <div className="flex items-center justify-center">
         <div>
           <motion.div
@@ -19,7 +26,7 @@ const Intro = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{
               type: "tween",
-              duration: 0.6,
+              duration: 0.3,
             }}
           >
             <Image
@@ -42,7 +49,7 @@ const Intro = () => {
         Hello, I&apos;m <span className="font-bold">Maxime Boué.</span> I&apos;m
         <span className="font-bold"> JavaScript Full-Stack Developer.</span> I
         enjoy<span className="font-bold"> practice and create</span>
-        <span className="italic"> sites & apps</span> Mostly in{" "}
+        <span className="italic"> sites & apps.</span> Mostly in{" "}
         <span className="underline">React and NodeJS</span>
       </motion.h1>
       <motion.div
@@ -55,13 +62,13 @@ const Intro = () => {
       >
         <Link
           href="#contact"
-          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 shadow-lg outline-none focus:scale-110 hover:scale-110 hover:text-gray-700 hover:bg-white active:scale-105 transition"
+          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 shadow-lg outline-none focus:scale-110 hover:scale-105  active:scale-105 transition"
         >
           Contact me here{" "}
           <IoIosArrowForward className="opacity-70 groupe-hover:translate-x-2 transition" />
         </Link>
         <a
-          className="group bg-white text-gray-700 border border-black/10 px-7 py-3 flex items-center gap-2 shadow-lg rounded-full outline-none focus:scale-110 hover:scale-110 hover:text-white hover:bg-gray-900 active:scale-105 transition"
+          className="group bg-white text-gray-700 border border-black/10 px-7 py-3 flex items-center gap-2 shadow-lg rounded-full outline-none focus:scale-110 hover:scale-100 active:scale-105 transition"
           href="/cv_maxime-boue.pdf"
           download
         >

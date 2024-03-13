@@ -8,27 +8,27 @@ import { LuGraduationCap } from "react-icons/lu";
 
 export const links = [
   {
-    name: "home",
+    name: "Home",
     hash: "#home",
   },
   {
-    name: "about",
+    name: "About",
     hash: "#about",
   },
   {
-    name: "projects",
+    name: "Projects",
     hash: "#projects",
   },
   {
-    name: "skills",
+    name: "Skills",
     hash: "#skills",
   },
   {
-    name: "experience",
+    name: "Experience",
     hash: "#experience",
   },
   {
-    name: "contact",
+    name: "Contact",
     hash: "#contact",
   },
 ] as const;
@@ -85,13 +85,13 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
   "JavaScript",
   "TypeScript",
   "React",
   "Next.js",
   "Node.js",
+  "HTML",
+  "CSS",
   "Git",
   "Tailwind",
   "Prisma",
