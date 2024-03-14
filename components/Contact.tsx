@@ -1,11 +1,28 @@
-import { FaPaperPlane } from "react-icons/fa";
+"use client";
+
+import { sendEmail } from "@/actions/sendEmail";
+import useSectionInView from "@/lib/hooks";
+import { motion } from "framer-motion";
+import toast from "react-hot-toast";
 import SectionTitle from "./SectionTitle";
+import SubmitBtn from "./SubmitBtn";
 
 const Contact = () => {
+  const { ref } = useSectionInView("Contact");
   return (
-    <section
+    <motion.section
+      ref={ref}
       id="contact"
       className="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center"
+      initial={{
+        opacity: 0,
+      }}
+      whileInView={{
+        opacity: 1,
+      }}
+      transition={{
+        duration: 1,
+      }}
     >
       <SectionTitle>Contact me</SectionTitle>
       <p className="text-gray-700 -mt-6">
@@ -18,28 +35,37 @@ const Contact = () => {
         </a>{" "}
         or through this form
       </p>
-      <form className="mt-10 flex flex-col" action="">
+      <form
+        className="mt-10 flex flex-col"
+        action={async (formData) => {
+          const { data, error } = await sendEmail(formData);
+          if (error) {
+            toast.error(error);
+            return;
+          }
+          toast.success("Email sent successfully");
+        }}
+      >
         <input
           className="h-14 px-4 rounded-lg borderBlack"
           type="email"
+          name="senderEmail"
           placeholder="Your email"
+          required
+          maxLength={500}
         />
         <textarea
           className="h-52 my-3 rounded-lg borderBlack p-4"
+          name="message"
           placeholder="Your message"
+          required
+          maxLength={5000}
         />
         <div className="flex justify-end">
-          <button
-            type="submit"
-            className="group flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-gray-900 text-white rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 group-hover:bg-gray-950 transition-all"
-          >
-            {" "}
-            Submit{" "}
-            <FaPaperPlane className="group-hover:translate-x-1 group-hover:-translate-y-1  text-xs-opacity-70 transition-all" />
-          </button>
+          <SubmitBtn />
         </div>
       </form>
-    </section>
+    </motion.section>
   );
 };
 

@@ -1,5 +1,6 @@
 "use client";
 
+import { useActiveSectionContext } from "@/context/ActiveSectionContext";
 import useSectionInView from "@/lib/hooks";
 import portrait from "@/public/astro.png";
 import { motion } from "framer-motion";
@@ -13,11 +14,12 @@ import { IoIosArrowForward } from "react-icons/io";
 
 const Intro = () => {
   const { ref } = useSectionInView("Home");
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
   return (
     <section
       ref={ref}
       id="home"
-      className="mb-28 max-w-[50rem] text- sm:mb-0 scroll-mt-[100rem]"
+      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
     >
       <div className="flex items-center justify-center">
         <div>
@@ -63,6 +65,10 @@ const Intro = () => {
         <Link
           href="#contact"
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 shadow-lg outline-none focus:scale-110 hover:scale-105  active:scale-105 transition"
+          onClick={() => {
+            setActiveSection("Contact");
+            setTimeOfLastClick(Date.now());
+          }}
         >
           Contact me here{" "}
           <IoIosArrowForward className="opacity-70 groupe-hover:translate-x-2 transition" />
@@ -78,7 +84,7 @@ const Intro = () => {
         <a
           href="https://www.linkedin.com/in/maxime-boue-dev"
           target="_blank"
-          className="bg-white text-gray-700 border border-black/10 p-4 flex items-center gap-2 rounded-full focus:scale-110 hover:scale-110 hover:text-gray-950  active:scale-105 transition"
+          className="bg-white text-gray-700 border text-xl border-black/10 p-4 flex items-center gap-2 rounded-full focus:scale-110 hover:scale-110 hover:text-gray-950  active:scale-105 transition"
         >
           <BsLinkedin />
         </a>
