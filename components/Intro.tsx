@@ -48,11 +48,13 @@ const Intro = () => {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        Hello, I&apos;m <span className="font-bold">Maxime Boué.</span> I&apos;m
-        <span className="font-bold"> JavaScript Full-Stack Developer.</span> I
-        enjoy<span className="font-bold"> practice and create</span>
-        <span className="italic"> sites & apps.</span> Mostly in{" "}
-        <span className="underline">React and NodeJS</span>
+        Salut, Je m&apos;appelle <span className="font-bold">Maxime Boué.</span>{" "}
+        Je suis
+        <span className="font-bold"> Développeur Web.</span> J&apos;aime
+        <span className="font-bold"> créer </span>des
+        <span className="italic"> applications & sites web.</span>{" "}
+        Principalement en <span className="underline">React</span> et{" "}
+        <span className="underline">Node.js</span>
       </motion.h1>
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-3 text-lg font-medium"
@@ -70,28 +72,28 @@ const Intro = () => {
             setTimeOfLastClick(Date.now());
           }}
         >
-          Contact me here{" "}
-          <IoIosArrowForward className="opacity-70 groupe-hover:translate-x-2 transition" />
+          Contactez moi ici{" "}
+          <IoIosArrowForward className="opacity-70 group-hover:translate-x-2 transition" />
         </Link>
         <a
-          className="group bg-white text-gray-700 border border-black/10 px-7 py-3 flex items-center gap-2 shadow-lg rounded-full outline-none focus:scale-110 hover:scale-100 active:scale-105 transition"
+          className="group bg-white text-gray-700 hover:text-gray-950 border border-black/10 dark:bg-white/10  dark:text-white/70 px-7 py-3 flex items-center gap-2 shadow-lg rounded-full outline-none focus:scale-110 hover:scale-100 active:scale-105 transition"
           href="/cv_maxime-boue.pdf"
           download
         >
-          Download my CV{" "}
+          Téléchargez mon CV{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
         <a
           href="https://www.linkedin.com/in/maxime-boue-dev"
           target="_blank"
-          className="bg-white text-gray-700 border text-xl border-black/10 p-4 flex items-center gap-2 rounded-full focus:scale-110 hover:scale-110 hover:text-gray-950  active:scale-105 transition"
+          className="bg-white text-gray-700 border text-xl border-black/10 dark:bg-white/10  dark:text-white/70 p-4 flex items-center gap-2 rounded-full focus:scale-110 hover:scale-110 hover:text-gray-950  active:scale-105 transition"
         >
           <BsLinkedin />
         </a>
         <a
           href="https://github.com/Maxime-Boue?tab=repositories"
           target="_blank"
-          className="bg-white text-gray-700 border border-black/10 p-4 text-[1.35rem] flex items-center gap-2 rounded-full focus:scale-110 hover:scale-110 hover:text-gray-950  active:scale-105 transition"
+          className="bg-white text-gray-700 border border-black/10 dark:bg-white/10  dark:text-white/70 p-4 text-[1.35rem] flex items-center gap-2 rounded-full focus:scale-110 hover:scale-110 hover:text-gray-950  active:scale-105 transition"
         >
           <FaGithubSquare />
         </a>

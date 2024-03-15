@@ -22,12 +22,12 @@ const About = () => {
         as a Fullstack JavaScript web developer at O&apos;Clock, as part of a
         professional retraining program. My training enabled me to acquire solid
         knowledge in{" "}
-        <span className="font-medium">
+        <span className="font-semibold">
           JavaScript/TypeScript, React, Node, Git, HTML/CSS
         </span>
         ... I also had the opportunity to develop my project management skills,
-        as a <span className="font-medium">Scrum Master</span>, within a 1-month
-        group project, developing from A to Z an{" "}
+        as a <span className="font-semibold">Scrum Master</span>, within a
+        1-month group project, developing from A to Z an{" "}
         <span className="italic">
           application for creating interactive stories
         </span>
