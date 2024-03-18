@@ -1,6 +1,6 @@
+import atelierCraie from "@/public/atelierCraie.png";
 import blackhole from "@/public/blackhole.jpg";
 import dreamkrafters from "@/public/dreamkrafters.png";
-import rmtdevImg from "@/public/rmtdev.png";
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
@@ -60,16 +60,15 @@ export const projectsData = [
   {
     title: "DreamKrafters",
     description:
-      "Dans le cadre de ma formation, j'ai pu travailler sur ce projet qui vise à permettre à l'utilisateur de créer des histoires interactives, à la manière d'un jeu de rôle.",
+      "Application de création d'histoires interactives, à la manière d'un livre dont vous êtes le héros.",
     tags: ["React", "Node.js", "PostgreSQL", "Tailwind", "Shadcn"],
     imageUrl: dreamkrafters,
   },
   {
-    title: "AppMetea",
-    description:
-      "Projet personnel d'application météo utilisant l'API OpenWeatherMap",
-    tags: ["React", "TypeScript", "Vite", "Tailwind", "OpenWeatherMap"],
-    imageUrl: rmtdevImg,
+    title: "Atelier Craie",
+    description: "Reconstruction d'un site web, à suivre...",
+    tags: ["Wordpress", "CSS", "FIGMA"],
+    imageUrl: atelierCraie,
   },
   {
     title: "BlackHole",
