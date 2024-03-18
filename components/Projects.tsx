@@ -7,10 +7,10 @@ import Project from "./Project";
 import SectionTitle from "./SectionTitle";
 
 const Projects = () => {
-  const { ref } = useSectionInView("Projects");
+  const { ref } = useSectionInView("Projets");
   return (
     <section ref={ref} id="projects" className="scroll-mt-28 mb-28">
-      <SectionTitle>My Projects</SectionTitle>
+      <SectionTitle>Mes Projets</SectionTitle>
       <div>
         {projectsData.map((project, index) => (
           <React.Fragment key={index}>

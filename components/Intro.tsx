@@ -76,7 +76,7 @@ const Intro = () => {
           <IoIosArrowForward className="opacity-70 group-hover:translate-x-2 transition" />
         </Link>
         <a
-          className="group bg-white text-gray-700 hover:text-gray-950 border border-black/10 dark:bg-white/10  dark:text-white/70 px-7 py-3 flex items-center gap-2 shadow-lg rounded-full outline-none focus:scale-110 hover:scale-100 active:scale-105 transition"
+          className="group bg-white text-gray-700 hover:text-gray-950 border border-black/10 dark:bg-white/10 dark:hover:text-white/90  dark:text-white/70 px-7 py-3 flex items-center gap-2 shadow-lg rounded-full outline-none focus:scale-110 hover:scale-100 active:scale-105 transition"
           href="/cv_maxime-boue.pdf"
           download
         >
@@ -86,14 +86,14 @@ const Intro = () => {
         <a
           href="https://www.linkedin.com/in/maxime-boue-dev"
           target="_blank"
-          className="bg-white text-gray-700 border text-xl border-black/10 dark:bg-white/10  dark:text-white/70 p-4 flex items-center gap-2 rounded-full focus:scale-110 hover:scale-110 hover:text-gray-950  active:scale-105 transition"
+          className="bg-white text-gray-700 border text-xl border-black/10 dark:bg-white/10 dark:hover:text-white/90  dark:text-white/70 p-4 flex items-center gap-2 rounded-full focus:scale-110 hover:scale-110 hover:text-gray-950  active:scale-105 transition"
         >
           <BsLinkedin />
         </a>
         <a
           href="https://github.com/Maxime-Boue?tab=repositories"
           target="_blank"
-          className="bg-white text-gray-700 border border-black/10 dark:bg-white/10  dark:text-white/70 p-4 text-[1.35rem] flex items-center gap-2 rounded-full focus:scale-110 hover:scale-110 hover:text-gray-950  active:scale-105 transition"
+          className="bg-white text-gray-700 border border-black/10 dark:bg-white/10  dark:text-white/70 dark:hover:text-white/90 p-4 text-[1.35rem] flex items-center gap-2 rounded-full focus:scale-110 hover:scale-110 hover:text-gray-950  active:scale-105 transition"
         >
           <FaGithubSquare />
         </a>

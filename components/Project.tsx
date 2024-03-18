@@ -28,7 +28,7 @@ function Project({ title, description, tags, imageUrl }: ProjectProps) {
         className=" bg-gray-100 hover:bg-gray-200 transition max-w-[42rem] rounded-xl border
        border-black/5 overflow-hidden sm:pr-8 relative sm:h-[20rem] 
        mb-3 sm:mb-8 last:mb-0 sm:group-even:pl-8
-       dark:bg-white/10 "
+       dark:bg-white/10 dark:hover:bg-white/20"
       >
         <div className="flex flex-col pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] h-full sm:group-even:ml-[18rem]">
           <h3 className="text-2xl font-semibold">{title}</h3>

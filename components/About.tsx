@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import SectionTitle from "./SectionTitle";
 
 const About = () => {
-  const { ref } = useSectionInView("About");
+  const { ref } = useSectionInView("Parcours");
 
   return (
     <motion.section
@@ -16,30 +16,33 @@ const About = () => {
       transition={{ delay: 0.175 }}
       id="about"
     >
-      <SectionTitle>About me</SectionTitle>
+      <SectionTitle>Mon Parcours</SectionTitle>
       <p className="mb-3">
-        I obtained a professional title following 6 months of intensive training
-        as a Fullstack JavaScript web developer at O&apos;Clock, as part of a
-        professional retraining program. My training enabled me to acquire solid
-        knowledge in{" "}
+        J&apos;ai obtenu le titre professionnel de{" "}
+        <span className="font-semibold">Développeur Web et Web Mobile </span>
+        suite à une formation intensive de 6 mois de l&apos;école O&apos;Clock,
+        dans le cadre d&apos;une reconversion professionnelle. Ma formation
+        m&apos;a permis d&apos;acquérir de solides connaissances en{" "}
         <span className="font-semibold">
           JavaScript/TypeScript, React, Node, Git, HTML/CSS
         </span>
-        ... I also had the opportunity to develop my project management skills,
-        as a <span className="font-semibold">Scrum Master</span>, within a
-        1-month group project, developing from A to Z an{" "}
-        <span className="italic">
-          application for creating interactive stories
-        </span>
-        .
+        .... J&apos;ai également eu l&apos;occasion de développer mes
+        compétences en gestion de projet, en tant que{" "}
+        <span className="italic">Scrum Master</span>, dans le cadre d&apos;un
+        projet de groupe d&apos;un mois, développant de A à Z une application de
+        création d&apos;histoires interactives.
       </p>
       <p>
-        My motivation is boundless, fueled by a constant thirst to learn and
-        progress. Passionate about the digital world, technology and pop
-        culture, my scientific background and experience as a design technician
-        help me enormously in the understanding and logic so important in the
-        world of web development. So I&apos;m ready to invest time and effort in
-        mastering new languages, tools and frameworks.
+        Ma motivation est sans limite, alimentée par une soif constante d&apos;
+        <span className="underline italic">apprendre</span> et de{" "}
+        <span className="underline italic">progresser</span>.{" "}
+        <span className="font-medium">Passionné</span> par le monde numérique,
+        la technologie et la pop culture, ma formation scientifique et mon
+        expérience en tant que technicien d&apos;études m&apos;aident énormément
+        dans la compréhension et la logique si importantes dans le monde du
+        développement web. Je suis donc prêt à{" "}
+        <span className="underline">investir du temps</span> dans la maîtrise de
+        nouveaux langages, outils et frameworks.
       </p>
     </motion.section>
   );

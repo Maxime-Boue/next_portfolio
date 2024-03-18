@@ -2,16 +2,15 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ThemeSwitch from "@/components/ThemeSwitch";
 import ActiveSectionContextProvider from "@/context/ActiveSectionContext";
-import { Inter, Major_Mono_Display } from "next/font/google";
+import { Inter } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
-const MMD = Major_Mono_Display({ weight: "400", preload: false });
 
 export const metadata = {
   title: "Maxime Boué | Portfolio",
-  description: "Maxime is a web developer",
+  description: "Maxime est un dévoloppeur web et web mobile",
 };
 
 export default function RootLayout({
@@ -20,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="!scroll-smooth">
+    <html lang="fr" className="!scroll-smooth">
       <body
         className={`${inter.className} bg-[#FEFDFB] text-gray-950 relative pt-28 sm:pt-36
         dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}

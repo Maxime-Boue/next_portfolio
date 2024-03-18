@@ -1,6 +1,6 @@
 import blackhole from "@/public/blackhole.jpg";
+import dreamkrafters from "@/public/dreamkrafters.png";
 import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
@@ -12,15 +12,15 @@ export const links = [
     hash: "#home",
   },
   {
-    name: "About",
+    name: "Parcours",
     hash: "#about",
   },
   {
-    name: "Projects",
+    name: "Projets",
     hash: "#projects",
   },
   {
-    name: "Skills",
+    name: "Compétences",
     hash: "#skills",
   },
   {
@@ -58,25 +58,24 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "BlackHole",
-    description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: blackhole,
-  },
-  {
     title: "DreamKrafters",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Node", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "Dans le cadre de ma formation, j'ai pu travailler sur ce projet qui vise à permettre à l'utilisateur de créer des histoires interactives, à la manière d'un jeu de rôle.",
+    tags: ["React", "Node.js", "PostgreSQL", "Tailwind", "Shadcn"],
+    imageUrl: dreamkrafters,
   },
   {
     title: "AppMetea",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "Projet personnel d'application météo utilisant l'API OpenWeatherMap",
+    tags: ["React", "TypeScript", "Vite", "Tailwind", "OpenWeatherMap"],
+    imageUrl: rmtdevImg,
+  },
+  {
+    title: "BlackHole",
+    description: "Projet en cours...",
+    tags: ["XXX", "XXX", "XXX", "XXX", "XXX"],
+    imageUrl: blackhole,
   },
 ] as const;
 
@@ -89,7 +88,8 @@ export const skillsData = [
   "HTML",
   "CSS",
   "Git",
-  "Tailwind",
+  "Tailwind CSS",
+  "Vite",
   "Redux",
   "Express",
   "PostgreSQL",

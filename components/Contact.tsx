@@ -24,16 +24,16 @@ const Contact = () => {
         duration: 1,
       }}
     >
-      <SectionTitle>Contact me</SectionTitle>
+      <SectionTitle>Contactez moi</SectionTitle>
       <p className="text-gray-700 -mt-6 dark:text-white/80">
-        Please contact me directly at{" "}
+        Vous pouvez directement me contacter à cette adresse :{" "}
         <a
           className="underline font-medium"
           href="mailto:boue.maxime6@gmail.com"
         >
           boue.maxime6@gmail.com
         </a>{" "}
-        or through this form
+        ou en remplissant le formulaire ci-dessous
       </p>
       <form
         className="mt-10 flex flex-col dark:text-black"
@@ -50,14 +50,14 @@ const Contact = () => {
           className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-90"
           type="email"
           name="senderEmail"
-          placeholder="Your email"
+          placeholder="Votre email"
           required
           maxLength={500}
         />
         <textarea
           className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-90"
           name="message"
-          placeholder="Your message"
+          placeholder="Votre message"
           required
           maxLength={5000}
         />
